@@ -346,3 +346,12 @@ body[data-page="18"] #stage,body[data-page="19"] #stage{height:min(100%,calc((10
 /* Hide the source photo's thin white perimeter without changing its layout. */
 .oven-photo .image-button{overflow:hidden}
 .oven-photo .image-button img,.oven-photo .image-button:hover img{clip-path:inset(1px);transform:scale(1.006)}
+
+/* Keep transparent video in exactly the original portrait frame. */
+.about .portrait>.portrait-motion{position:absolute;width:165%;height:165%;max-width:none;left:-27%;top:-2%;object-fit:contain;object-position:top center;z-index:2}
+.about .portrait>.portrait-motion{width:110%;height:137%;left:-15%;top:-3%;object-fit:contain;object-position:top center}
+.about .skill{grid-template-columns:minmax(0,1fr)}.about .portrait>.portrait-motion{height:120%;top:5%}
+.about .portrait>.portrait-motion{width:100%;height:118%;left:-9%;top:17%}
+.about .portrait>.portrait-motion{left:-15%}
+.about .portrait>.portrait-motion{width:100%;height:118%;left:-15%;top:26%}
+.longscroll img[width]{aspect-ratio:attr(width number)/attr(height number);height:auto}
